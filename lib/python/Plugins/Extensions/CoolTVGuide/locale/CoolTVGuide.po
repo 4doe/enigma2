@@ -1,0 +1,238 @@
+#
+#   *******************************
+#   *  Cool TV Guide by Coolman   *
+#   *  3D EPG-Plugin for Enigma2  *
+#   *  Coded by Coolman (c) 2012  *
+#   *******************************
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cool TV Guide V5.1\n"
+"POT-Creation-Date: 2012-02-02 20:50+0100\n"
+"PO-Revision-Date: 2012-02-03 00:26+0100\n"
+"Last-Translator: Coolman <Coolman@uni.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+
+msgid "Cool 3D"
+msgstr "Cool 3D"
+
+msgid "Show Picon (Yes) (need restart)"
+msgstr "Zeige Picon (Ja) (Neustart)"
+
+msgid "Show CoolPico (Yes) (need restart)"
+msgstr "Zeige CoolPico (Ja) (Neustart)"
+
+msgid "Picon Height (60), (54), (54)"
+msgstr "Picon Höhe (60), (54), (54)"
+
+msgid "Picon Item Height (60), (54), (54)"
+msgstr "Picon Zeilenhöhe (60), (54), (54)"
+
+msgid "CoolPico Height (30), (27), (27)"
+msgstr "CoolPico Höhe (30), (27), (27)"
+
+msgid "CoolPico Item Height (30), (27), (27)"
+msgstr "CoolPico Zeilenhöhe (30), (27), (27)"
+
+msgid "Left Section Width (110), (75), (75)"
+msgstr "Linke Spaltenbreite (110), (75), (75)"
+
+msgid "Left Section Width (190), (110), (110)"
+msgstr "Linke Spaltenbreite (190), (110), (110)"
+
+msgid "Channel 1 at Start (No)"
+msgstr "Starte auf Kanal 1 (Nein)"
+
+msgid "Red Button (Zap)"
+msgstr "Rote Taste (Zap)"
+
+msgid "LongRed Button (ZAP+Exit)"
+msgstr "LangRote Taste (ZAP+Exit)"
+
+msgid "Green Button (Timer)"
+msgstr "Grüne Taste (Timer)"
+
+msgid "LongGreen Button (Autotimer)"
+msgstr "LangGrüne Taste (Autotimer)"
+
+msgid "Yellow Button (GuideSwitch)"
+msgstr "Gelbe Taste (GuideSwitch)"
+
+msgid "LongYellow Button (Bouquetlist)"
+msgstr "LangGelbe Taste (Bouquetliste)"
+
+msgid "Blue Button (CoolSearch)"
+msgstr "Blaue Taste (CoolSearch)"
+
+msgid "LongBlue Button (IMDb Search)"
+msgstr "LangBlaue Taste (IMDb Suche)"
+
+msgid "OK Button (Cool Info Guide)"
+msgstr "OK Taste (Cool Info Guide)"
+
+msgid "LongOK Button"
+msgstr "LangOK Taste"
+
+msgid "Info Button (EPG Select)"
+msgstr "Info/EPG Taste (EPG Select)"
+
+msgid "LongInfo Button"
+msgstr "LangInfo/EPG Taste"
+
+msgid "Event 60 Fontsize (18), (15), (15)"
+msgstr "Rechte 60 Schriftgröße (18), (15), (15)"
+
+msgid "Event 30 Fontsize (18), (15), (15)"
+msgstr "Rechte 30 Schriftgröße (18), (15), (15)"
+
+msgid "Left Fontsize (22), (18), (16) (need restart)"
+msgstr "Linke Schriftgröße (22), (18), (16) (Neu Öffnen)"
+
+msgid "Timeline Fontsize (20), (18), (16) (need restart)"
+msgstr "Zeitlinie Schriftgröße (20), (18), (16) (Neu Öffnen)"
+
+msgid "Right 60 Font Center (Yes)"
+msgstr "Rechte 60 Schrift zentrieren (Ja)"
+
+msgid "Time Scale (180)"
+msgstr "Zeitbereich (180)"
+
+msgid "Bouquet at Start (No)"
+msgstr "Zeige Bouquet beim Start (Nein)"
+
+msgid "Skip Empty Services (No) (need restart)"
+msgstr "überspringe leeres EPG (Nein) (E2 Neustart)"
+
+msgid "Standard for (HD), (XD), (SD) Skin"
+msgstr "Standard für (HD), (XD), (SD) Skin"
+
+msgid "Press ( < OK > ) to change your Buttons !!!"
+msgstr "Drücke ( < OK > ) um Deine Tastenbelegung zu ändern !!!"
+
+msgid " No function with your Image"
+msgstr " Keine Funktion mit Deinem Image"
+
+msgid "   check Autotimer ?"
+msgstr "   Autotimer überprüfen ?"
+
+msgid "-- please check your Timer --"
+msgstr "-- Bitte überprüfe Deine Timer --"
+
+msgid "has moved"
+msgstr "wurde verschoben"
+
+msgid "is disabled"
+msgstr "ist deaktiviert"
+
+msgid "configuration of all Guides for your special wishes"
+msgstr "Anpassung aller Guides an Deine speziellen Wünsche"
+
+msgid "Cool Easy-Uni Guide use Yellow/Blue for Time -/+"
+msgstr "Cool Easy-Uni Guide benutze Gelb/Blau für Zeit -/+"
+
+msgid "Cool Easy-Uni Guide show Channel Number"
+msgstr "Cool Easy-Uni Guide Sendernummer anzeigen"
+
+msgid "Cool TimerAlarm check if Timer has changed"
+msgstr "Cool TimerAlarm prüfe auf Änderungen aller Timer"
+
+msgid "Cool TimerAlarm check if Timer is deaktivated"
+msgstr "Cool TimerAlarm prüfe ob Timer deaktiviert sind"
+
+msgid "Start Cool TV Guide with Red Button"
+msgstr "Starte Cool TV Guide mit roter Taste"
+
+msgid "Start Cool Single Guide with Green Button"
+msgstr "Starte Cool Single Guide mit grüner Taste"
+
+msgid "Start Cool Easy Guide with Yellow Button"
+msgstr "Starte Cool Easy Guide mit gelber Taste"
+
+msgid "Start Cool Info Guide with Info/EPG Button"
+msgstr "Starte Cool Info Guide mit Info/EPG Taste"
+
+msgid "Cancel"
+msgstr "Abbruch"
+
+msgid "Save"
+msgstr "Sichern"
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nein"
+
+msgid "IMDb Search"
+msgstr "IMDb Suche"
+
+msgid "Channel Info"
+msgstr "Kanal Info"
+
+msgid "Add Timer"
+msgstr "Timer"
+
+msgid "delete this Timer ?"
+msgstr "Timer löschen ?"
+
+msgid "edit this Timer ?"
+msgstr "Timer editieren ?"
+
+msgid "Bouquetlist"
+msgstr "Bouquetliste"
+
+msgid "Sort A-Z"
+msgstr "Sortiere A-Z"
+
+msgid "Sort Time"
+msgstr "Sortiere Zeit"
+
+msgid "New Search"
+msgstr "Neue Suche"
+
+msgid "Last Search"
+msgstr "Letzte Suche"
+
+msgid "Search for:"
+msgstr "Suche nach:"
+
+msgid "No history"
+msgstr "Keine letzte Suche vorhanden"
+
+msgid "Delete Timer"
+msgstr "Lösche Timer"
+
+msgid "Today"
+msgstr "Heute"
+
+msgid "Mon"
+msgstr "Mo"
+
+msgid "Tue"
+msgstr "Di"
+
+msgid "Wed"
+msgstr "Mi"
+
+msgid "Thu"
+msgstr "Do"
+
+msgid "Fri"
+msgstr "Fr"
+
+msgid "Sat"
+msgstr "Sa"
+
+msgid "Sun"
+msgstr "So"
+

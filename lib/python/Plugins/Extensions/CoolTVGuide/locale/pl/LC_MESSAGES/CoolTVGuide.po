@@ -1,0 +1,244 @@
+#
+#   *******************************
+#   *  Cool TV Guide by Coolman   *
+#   *  3D EPG-Plugin for Enigma2  *
+#   *  Coded by Coolman (c) 2011  *
+#   *******************************
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cool TV Guide V5.0\n"
+"POT-Creation-Date: 2011-06-01 18:50+0100\n"
+"PO-Revision-Date: 2011-11-30 20:30+0100\n"
+"Last-Translator: kosmacz <anteneczka@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Polish\n"
+"X-Poedit-Country: POLAND\n"
+
+msgid "Cool 3D"
+msgstr "Cool 3D"
+
+msgid "Load Picon (Yes) (need restart)"
+msgstr "Wczytaj Pikony (TAK) (Wymagany Restart)"
+
+msgid "Load CoolPico (Yes) (need restart)"
+msgstr "Wczytaj CoolPico (TAK) (Wymagany Restart)"
+
+msgid "Start with Standard Height 60 (Yes)"
+msgstr "Uruchom ze standartową wyskością 60 (Tak)"
+
+msgid "Picon Height (60), (54), (54)"
+msgstr "Wysokość Pikon (60), (54), (54)"
+
+msgid "Picon Item Height (60), (54), (54)"
+msgstr "Pozycja wysokości Pikon (60), (54), (54)"
+
+msgid "CoolPico Height (30), (27), (27)"
+msgstr "Wysokość CoolPico (30), (27), (27)"
+
+msgid "CoolPico Item Height (30), (27), (27)"
+msgstr "Pozycja wysokości CoolPico (30), (27), (27)"
+
+msgid "Left Width for 60 Height (110), (75), (75)"
+msgstr "Z lewej szerokość do wysokości 60 (110), (75), (75)"
+
+msgid "Left Width for 30 Height (190), (110), (110)"
+msgstr "Z lewej szerokość do wysokości 30  (190), (110), (110)"
+
+msgid "Channel 1 at Start (No)"
+msgstr "Start na kanale 1 (Nie)"
+
+msgid "Picon Path (Press Menu)"
+msgstr "Ścieżka do Pikon (Naciśnij Menu)"
+
+msgid "About (Press Menu)"
+msgstr "O wtyczce (Naciśnij Menu)"
+
+msgid "Red Button (Zap)"
+msgstr "Czerwony przycisk (Przełącz)"
+
+msgid "LongRed Button (ZAP+Exit)"
+msgstr "Przytrzymaj Czerwony przycisk (Przełącz+Wyjdź)"
+
+msgid "Green Button (Timer)"
+msgstr "Zielony przycisk (Timer)"
+
+msgid "LongGreen Button (Autotimer)"
+msgstr "Przytrzymaj Zielony przycisk  (Autotimer)"
+
+msgid "Yellow Button (GuideSwitch)"
+msgstr "Żółty Przycisk (Przełącznik Przewodnika)"
+
+msgid "LongYellow Button (Bouquetlist)"
+msgstr "Przytrzymaj Żółty przycisk (Lista Bukietów)"
+
+msgid "Blue Button (CoolSearch)"
+msgstr "Niebieski przycisk (Szukaj)"
+
+msgid "LongBlue Button (IMDb Search)"
+msgstr "Przytrzymaj Niebieski przycisk (Szukaj IMDb)"
+
+msgid "OK Button (Cool Info Guide)"
+msgstr "Przycisk OK (Info o kanale)"
+
+msgid "LongOK Button"
+msgstr "Przytrzymaj przycisk OK"
+
+msgid "Info Button (EPG Select)"
+msgstr "Przycisk INFO (Wybór EPG)"
+
+msgid "LongInfo Button"
+msgstr "Przytrzymaj przycisk INFO"
+
+msgid "Cool PrimeTime (20) hour"
+msgstr "Główny Czas Cool (20) godzina"
+
+msgid "Cool PrimeTime (00) minute"
+msgstr "Główny Czas Cool (00) minut"
+
+msgid "Event 60 Fontsize (18), (15), (15)"
+msgstr "Wydarzenia rozmiar Czcionki  60  (18), (15), (15) "
+
+msgid "Event 30 Fontsize (18), (15), (15)"
+msgstr "Wydarzenia rozmiar Czcionki  30  (18), (15), (15) "
+
+msgid "Left Fontsize (22), (18), (16) (need restart)"
+msgstr "Z Lewej rozmiar Czcionki (22), (18), (16) (Wymagany Rastart)"
+
+msgid "Timeline Fontsize (20), (18), (16) (need restart)"
+msgstr "Rozmiar czcionki dla Lini czasu (20), (18), (16) (Wymagany Restart)"
+
+msgid "Right 60 Font Center (Yes)"
+msgstr "Z prawej Czcionka 60 w Środku (Tak)"
+
+msgid "Time Scale (180)"
+msgstr "Skalowanie Czasu (180)"
+
+msgid "Bouquet at Start (No)"
+msgstr "Bukiet przy starcie (Nie)"
+
+msgid "Skip Empty Services (No) (need restart)"
+msgstr "Pomiń puste kanały (Nie) (Wymagany Restart)"
+
+msgid "Standard for (HD), (XD), (SD) Skin"
+msgstr "Standard dla skórek (HD), (XD), (SD)"
+
+msgid "Press ( < OK > ) to change your Buttons !!!"
+msgstr "Przyciskaj ( Lewo OK Prawo), aby zmienić swoje przyciski !!!"
+
+msgid " No function with your Image"
+msgstr "Brak tej funkcji w twoim Image"
+
+msgid "   check Autotimer ?"
+msgstr "Sprawdzić Auto Timer?"
+
+msgid "-- please check your Timer --"
+msgstr "-- Proszę sprawdzić Timer --"
+
+msgid "has moved"
+msgstr "został przeniesiony"
+
+msgid "is disabled"
+msgstr "jest wyłączone"
+
+msgid "Cool Easy Guide use Yellow/Blue for Time -/+"
+msgstr "Cool Easy Guide użyj klawisze Żółty/Niebieski dla zmiany Czasu -/+"
+
+msgid "Cool Easy Guide show Channel Number"
+msgstr "Cool Easy Guide pokaż Numer Kanału"
+
+msgid "Cool TimerAlarm check if Timer has changed"
+msgstr "Cool TimerAlarm sprawdza czy zmienił się Timer"
+
+msgid "Cool TimerAlarm check if Timer is deaktivated"
+msgstr "Cool TimerAlarm sprawdza czy Timer jest wyłączony"
+
+msgid "Cancel"
+msgstr "Anuluj"
+
+msgid "Save"
+msgstr "Zapisz"
+
+msgid "Search"
+msgstr "Szukaj"
+
+msgid "Yes"
+msgstr "Tak"
+
+msgid "No"
+msgstr "Nie"
+
+msgid "IMDb Search"
+msgstr "Przeszukaj IMDb"
+
+msgid "Channel Info"
+msgstr "Info o Kanale"
+
+msgid "Add Timer"
+msgstr "Dodaj Timer"
+
+msgid "delete this Timer ?"
+msgstr "Usunąć ten Timer ?"
+
+msgid "edit this Timer ?"
+msgstr "Edytować ten Timer ?"
+
+msgid "Bouquetlist"
+msgstr "Lista Bukietów"
+
+msgid "Cool Picon Path"
+msgstr "Ścieżka dla Cool Pikon"
+
+msgid "Your Picon Path:"
+msgstr "Ścieżka dla Pikon:"
+
+msgid "Sort A-Z"
+msgstr "Sortuj A-Z"
+
+msgid "Sort Time"
+msgstr "Sortuj wg Czasu"
+
+msgid "New Search"
+msgstr "Nowe Wyszuk."
+
+msgid "Last Search"
+msgstr "Ostatnie Wyszuk."
+
+msgid "Search for:"
+msgstr "Szukaj:"
+
+msgid "No history"
+msgstr "Brak historii przeszukiwania"
+
+msgid "Delete Timer"
+msgstr "Usuń Timer"
+
+msgid "Today"
+msgstr "Dziś"
+
+msgid "Mon"
+msgstr "Pon"
+
+msgid "Tue"
+msgstr "Wto"
+
+msgid "Wed"
+msgstr "Śro"
+
+msgid "Thu"
+msgstr "Czw"
+
+msgid "Fri"
+msgstr "Pią"
+
+msgid "Sat"
+msgstr "Sob"
+
+msgid "Sun"
+msgstr "Nie"
+

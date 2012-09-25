@@ -1,0 +1,47 @@
+
+<!--###################################
+ #	   Cool TV Guide by Coolman		 #
+  #		EPG-Plugin for Enigma2	    #
+   #     by Coolman (c) 2012       #
+  #									#
+ #		    Version: V5 			 #
+####################################-->
+
+
+
+<keymap>
+	<map context="CoolTVGuideActions">
+
+		<key id="KEY_MENU" mapto="CoolMenu" flags="m" />
+		<key id="KEY_TEXT" mapto="CoolTime" flags="m" />
+		<key id="KEY_RED" mapto="CoolRed" flags="b" />
+		<key id="KEY_RED" mapto="CoolRedLong" flags="l" />
+		<key id="KEY_GREEN" mapto="CoolGreen" flags="b" />
+		<key id="KEY_GREEN" mapto="CoolGreenLong" flags="l" />
+		<key id="KEY_YELLOW" mapto="CoolYellow" flags="b" />
+		<key id="KEY_YELLOW" mapto="CoolYellowLong" flags="l" />
+		<key id="KEY_BLUE" mapto="CoolBlue" flags="b" />
+		<key id="KEY_BLUE" mapto="CoolBlueLong" flags="l" />
+		<key id="KEY_OK" mapto="CoolOK" flags="b" />
+		<key id="KEY_OK" mapto="CoolOKLong" flags="l" />
+		<key id="KEY_INFO" mapto="CoolInfo" flags="b" />
+		<key id="KEY_INFO" mapto="CoolInfoLong" flags="l" />
+		<key id="KEY_HELP" mapto="CoolHelp" flags="m" />
+		<key id="KEY_CHANNELUP" mapto="CoolChannelUP" flags="b" />
+		<key id="KEY_CHANNELUP" mapto="CoolChannelUPLong" flags="l" />
+		<key id="KEY_CHANNELDOWN" mapto="CoolChannelDown" flags="b" />
+		<key id="KEY_CHANNELDOWN" mapto="CoolChannelDownLong" flags="l" />
+		<key id="KEY_RECORD" mapto="CoolRecord" flags="m" />
+		<key id="KEY_RADIO" mapto="CoolRecord" flags="m" />
+		<key id="KEY_EXIT" mapto="CoolCancel" flags="m" />
+		<key id="KEY_ESC" mapto="CoolCancel" flags="m" />
+		<key id="KEY_VIDEO"	mapto="CoolVIDEO" flags="m" />
+		<key id="KEY_AUDIO"	mapto="CoolAUDIO" flags="m" />
+		<key id="KEY_PLAY" mapto="CoolPlay" flags="m" />
+		<key id="KEY_REWIND" mapto="CoolRewind" flags="m" />
+		<key id="KEY_FASTFORWARD" mapto="CoolFastForward" flags="m" />
+		<key id="KEY_TV" mapto="CoolKeyTV" flags="m" />
+
+	</map>
+
+</keymap>

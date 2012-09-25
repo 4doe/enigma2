@@ -1,0 +1,37 @@
+<screen name="CoolSearch" position="0,0" size="1280,720" title="Cool Search" backgroundColor="#000000" flags="wfNoBorder">
+	<eLabel text="C  o  o  l    S  e  a  r  c  h" position="520,20" size="480,30" font="Regular;26" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="center" transparent="1" />
+	<ePixmap position="0,0" zPosition="-10" size="1280, 720" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/Menu/CoolEasyGuide.png" transparent="1" />
+	<widget name="date" position="40,20" size="180,30" font="Regular;26" halign="left" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+	<ePixmap pixmap="skin_default/icons/clock.png" position="305,27" zPosition="1" size="26,26" alphatest="on" />
+	<widget source="global.CurrentTime" render="Label" position="325,20" size="160,30" font="Regular;26" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<convert type="ClockToText">WithSeconds</convert>
+	</widget>
+
+	<widget source="Service" render="CoolPico" position="540,20" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
+	<widget source="Service" render="CoolPico" position="930,20" zPosition="1" size="50,30" alphatest="blend" transparent="1" />
+
+	<widget source="global.CurrentTime" render="Label" position="1070,20" size="160,30" font="Regular;26" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<convert type="ClockToText">Format:%d.%m.%Y</convert>
+	</widget>
+	<ePixmap position="40,58" size="390,225" zPosition="2" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/Menu/CoolFrame.png" />
+	<widget source="session.VideoPicture" render="Pig" position="45,63" size="380,215" zPosition="3" backgroundColor="#ff000000" />
+
+	<widget source="Event" render="Label" position="450,60" size="790,30" font="Regular;24" foregroundColor="#FF6600" backgroundColor="#605f5e" transparent="1" halign="left">
+		<convert type="EventName">Name</convert>
+	</widget>
+
+	<widget source="Event" render="Label" position="450,90" size="790,185" font="Regular;20" backgroundColor="#00605f5e" transparent="1">
+		<convert type="EventName">ExtendedDescription</convert>
+	</widget>
+	<widget name="list" position="40,305" size="1190,365" itemHeight="28" zPosition="3" CoolFont="Regular;22" CoolServiceFont="Regular;22" CoolEventFont="Regular;22" CoolDayPos="0" CoolDayHPos="2" CoolDatePos="70" CoolDateHPos="2" CoolTimePos="150" CoolTimeHPos="2" CoolServicePos="230" CoolServiceHPos="2" CoolEventPos="500" CoolEventHPos="2" CoolDaySize="50" CoolDateSize="70" CoolTimeSize="70" CoolServiceSize="280" CoolEventSize="700" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/CoolCursor.png" CoolServiceColor="#FF6600" CoolEventColor="#FFFFFF" CoolDateColor="#FFFFFF" CoolTimeColor="#3B98C9" CoolDayColor="#FF6600" CoolBackColor="#000000" CoolBackColorSel="#000000" CoolEventBackColor="#000000" CoolRecEventBackColor="#000000" CoolRecPreColor="#B59E01" CoolRecColor="#9F1313" backgroundColor="#FFFFFFFF" scrollbarMode="showOnDemand" transparent="1" />
+
+	<ePixmap pixmap="skin_default/buttons/red.png" position="270,675" size="25,25" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/green.png" position="460,675" size="25,25" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/yellow.png" position="670,675" size="25,25" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/blue.png" position="860,675" size="25,25" alphatest="blend" />
+	<widget name="key_red" position="305,679" size="220,30" font="Regular;20" halign="left" valign="top" foregroundColor="#9F1313" backgroundColor="#000000" transparent="1" />
+	<widget name="key_green" position="495,679" size="220,30" font="Regular;20" halign="left" valign="top" foregroundColor="#00389416" backgroundColor="#000000" transparent="1" />
+	<widget name="key_yellow" position="705,679" size="220,30" font="Regular;20" halign="left" valign="top" foregroundColor="#B59E01" backgroundColor="#000000" transparent="1" />
+	<widget name="key_blue" position="895,679" size="220,30" font="Regular;20" halign="left" valign="top" foregroundColor="#1E28B6" backgroundColor="#000000" transparent="1" />
+
+</screen>

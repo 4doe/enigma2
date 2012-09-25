@@ -1,0 +1,18 @@
+rechter Rahmen 					= 	CoolBorderColR
+linker Rahmen					= 	CoolBorderColL
+Grün jetzt Sendung				= 	CoolNowBackCol
+Grün jetzt Sendung selected		= 	CoolNowBackColSel
+Blau TV Sender					= 	CoolTVBackCol
+Blau TV Sender selected			= 	CoolTVBackColSel
+Schwarz Back Color				= 	CoolBackCol
+Schwarz Back Color selected		= 	CoolBackColSel
+Rot Back Color Rec				= 	CoolBackRecCol
+Rot Back Color Rec selected		= 	CoolBackRecColSel
+Picon Backcolor					= 	CoolPiconBackCol
+No Picon Backcolor				= 	CoolNoPiconBackCol
+
+No Picon Font					= 	CoolPiconFontCol
+Grün Font						= 	CoolNowFontCol
+Grün Font selected				= 	CoolNowFontColSel
+alle Font ausser Grün			= 	CoolFontCol
+alle Font selected ausser Grün	= 	CoolFontColSel

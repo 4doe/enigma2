@@ -1,0 +1,15 @@
+# Ovo je spisak filmova koj 1channel plugin koristi, 
+# sve linije koje pocinju sa ljestvicama(#) se ignoriraju.
+# Bitno je samo da filmovi uneseni u listu budu uneseni na sljedeci nacin;
+# ime "filma; link", pazite da je tocka zarez(;) zaljeplena za ime filma pa
+# razmak( ) pa link(http://www.putlocker.com/file/1234567890ABCDEF) 
+The first test video; http://www.putlocker.com/file/A4D4F48BA88D45DD
+Haywire; http://www.putlocker.com/file/16BD4831E4252F61
+The A-Team; http://www.putlocker.com/file/C020295A386CB756
+Inception; http://www.putlocker.com/file/ELQKE1TJBBSCGWO
+Resident Evil Afterlife; http://www.putlocker.com/file/0B178EDC4224A189
+Rise of the planet of apes; http://www.putlocker.com/file/2FB2BBF93C5B6716
+Into The Abyss 2011; http://www.putlocker.com/file/82DCBF60E1A66CFC
+Project.X; http://www.putlocker.com/file/26C47F5B8FE4A02A
+rb-mbe.avi; http://www.putlocker.com/file/9F17AD54BEEF6716
+Nikita.S02E16; http://www.putlocker.com/file/4FD96D6BF943D5C0

@@ -1,0 +1,202 @@
+#
+#   *******************************
+#   *  Cool TV Guide by Coolman   *
+#   *  3D EPG-Plugin for Enigma2  *
+#   *  Coded by Coolman (c) 2011  *
+#   *******************************
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cool TV Guide\n"
+"POT-Creation-Date: 2010-12-25 18:50+0100\n"
+"PO-Revision-Date: 2011-07-05 04:21+0100\n"
+"Last-Translator: Coolman <Coolman@uni.de>\n"
+"Language-Team: Peter Pan Team\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Norwegian\n"
+"X-Poedit-Country: Norway\n"
+
+msgid "Cool 3D"
+msgstr "Cool 3D"
+
+msgid "Load Picon (Yes) (need restart)"
+msgstr "Laste Picon (Ja) (krever restart)"
+
+msgid "Load CoolPico (Yes) (need restart)"
+msgstr "Laste CoolPico (Ja) (krever restart)"
+
+msgid "Start View 60 , 30 (60)"
+msgstr "Start-visning 60 , 30 (60)"
+
+msgid "Picon Height (60), (54), (54)"
+msgstr "Picon-høyde (60), (54), (54)"
+
+msgid "Picon Item Height (60), (54), (54)"
+msgstr "Picon linjehøyde (60), (54), (54)"
+
+msgid "CoolPico Height (30), (27), (27)"
+msgstr "CoolPico-høyde (30), (27), (27)"
+
+msgid "CoolPico Item Height (30), (27), (27)"
+msgstr "CoolPico linjehøyde (30), (27), (27)"
+
+msgid "Left Width for 60 Height (110), (75), (75)"
+msgstr "Venstre bredde for høyde 60 (110), (75), (75)"
+
+msgid "Left Width for 30 Height (190), (110), (110)"
+msgstr "Venstre bredde for høyde 30 (190), (110), (110)"
+
+msgid "Channel 1 at Start (No)"
+msgstr "Start med kanal 1 (Nei)"
+
+msgid "Picon Path (Press Menu)"
+msgstr "Picon-katalog (trykk Menu)"
+
+msgid "About (Press Menu)"
+msgstr "Om (trykk Menu)"
+
+msgid "Red Button (Zap)"
+msgstr "Rød-knapp (Zap)"
+
+msgid "LongRed Button (ZAP+Exit)"
+msgstr "Lang Rød-knapp (ZAP+Exit)"
+
+msgid "Green Button (Timer)"
+msgstr "Grønn-knapp (Timer)"
+
+msgid "LongGreen Button (Autotimer)"
+msgstr "Lang Grønn-knapp (Autotimer)"
+
+msgid "Yellow Button (GuideSwitch)"
+msgstr "Gul-knapp (GuideSwitch)"
+
+msgid "LongYellow Button (Bouquetlist)"
+msgstr "Lang Gul-knapp (Bouquetliste)"
+
+msgid "Blue Button (Search)"
+msgstr "Blå-knapp (Søk)"
+
+msgid "LongBlue Button (IMDb Search)"
+msgstr "Lang Blå-knapp (IMDb-søk)"
+
+msgid "OK Button (Channel Info)"
+msgstr "OK-knapp (Kanalinfo)"
+
+msgid "LongOK Button"
+msgstr "Lang OK-knapp"
+
+msgid "Info Button (Cool Single Guide)"
+msgstr "Info/EPG-knapp (Cool Single Guide)"
+
+msgid "LongInfo Button (Cool TV<>Multi Guide)"
+msgstr "Lang Info/EPG-knapp (Cool TV<>Multi Guide)"
+
+msgid "Cool PrimeTime (20) hour"
+msgstr "Cool kveldsprogram (20) time"
+
+msgid "Cool PrimeTime (00) minute"
+msgstr "Cool kveldsprogram (00) minutt"
+
+msgid "Event 60 Fontsize (18), (15), (15)"
+msgstr "Hendelse 60 skriftstørrelse (18), (15), (15)"
+
+msgid "Event 30 Fontsize (18), (15), (15)"
+msgstr "Hendelse 30 skriftstørrelse (18), (15), (15)"
+
+msgid "Left Fontsize (22), (18), (16) (need restart)"
+msgstr "Venstre skriftstørrelse (22), (18), (16) (krever restart)"
+
+msgid "Timeline Fontsize (20), (18), (16) (need restart)"
+msgstr "Tidslinje skriftstørrelse (20), (18), (16) (krever restart)"
+
+msgid "Right 60 Font Center (Yes)"
+msgstr "Høyre 60 skrift sentrert (Ja)"
+
+msgid "Time Scale (180)"
+msgstr "Tidsskala (180)"
+
+msgid "Bouquet at Start (No)"
+msgstr "Se Bouquet ved start (Nei)"
+
+msgid "Skip Empty Services (No) (need restart)"
+msgstr "Hopp over tomme EPG-felt (Nei) (krever restart)"
+
+msgid "Standard for (HD), (XD), (SD) Skin"
+msgstr "Standard for (HD), (XD), (SD) Skin"
+
+msgid "Press ( < OK > ) to change your Buttons !!!"
+msgstr "Trykk ( < OK > ) for å endre tasteoppsett !!!"
+
+msgid " No function with your Image"
+msgstr "Ingen funksjon for ditt Image"
+
+msgid "   check Autotimer ?"
+msgstr "Sjekk Autotimer?"
+
+msgid "Cancel"
+msgstr "Avbryt"
+
+msgid "Save"
+msgstr "Lagre"
+
+msgid "Search"
+msgstr "Søk"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "No"
+msgstr "Nei"
+
+msgid "IMDb Search"
+msgstr "IMDb-søk"
+
+msgid "Channel Info"
+msgstr "Kanalinfo"
+
+msgid "Add Timer"
+msgstr "Timer"
+
+msgid "delete this Timer ?"
+msgstr "Slett timer?"
+
+msgid "edit this Timer ?"
+msgstr "Endre timer?"
+
+msgid "Bouquetlist"
+msgstr "Bouquet-liste"
+
+msgid "Cool Picon Path"
+msgstr "Cool Picon-katalog"
+
+msgid "Your Picon Path:"
+msgstr "Din Picon-katalog:"
+
+msgid "Today"
+msgstr "I dag"
+
+msgid "Mon"
+msgstr "Man"
+
+msgid "Tue"
+msgstr "Tir"
+
+msgid "Wed"
+msgstr "Ons"
+
+msgid "Thu"
+msgstr "Tor"
+
+msgid "Fri"
+msgstr "Fre"
+
+msgid "Sat"
+msgstr "Lør"
+
+msgid "Sun"
+msgstr "Søn"
+

@@ -1,0 +1,37 @@
+<screen name="CoolUniGuide" position="center,center" size="720,576" backgroundColor="#000000" title="Cool Uni Guide" flags="wfNoBorder">
+	<eLabel text="C  o  o  l    U  n  i    G  u  i  d  e" position="205,18" size="380,28" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="center" transparent="1" />
+	<widget name="date" position="30,18" size="180,24" font="Regular;18" halign="left" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+	<ePixmap pixmap="skin_default/icons/clock.png" position="178,20" zPosition="1" size="14,14" alphatest="on" />
+	<widget source="global.CurrentTime" render="Label" position="196,18" size="80,20" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<convert type="ClockToText">WithSeconds</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="580,18" size="100,24" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<convert type="ClockToText">Format:%d.%m.%Y</convert>
+	</widget>
+	
+	<widget name="list" position="30,48" size="660,392" itemHeight="28" zPosition="25" CoolFont="Regular;18" CoolServiceFont="Regular;18" CoolEventFont="Regular;18" CoolServiceSize="144" CoolEventSize="625" CoolServicePos="0" CoolServiceHPos="4" CoolEventPos="270" CoolEventHPos="4" CoolBarPos="150" CoolBarHPos="6" CoolBarSize="110" CoolBarHigh="15" CoolTimePos="150" CoolTimeHPos="4" CoolTimeSize="120" CoolDurationPos="1070" CoolDurationSize="120" CoolServiceColor="#FF6600" CoolBarColor="#3B98C9" CoolEventColor="#FFFFFF" CoolBackColorSel="#000000" CoolRecPreColor="#B59E01" CoolRecColor="#9F1313" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/CoolCursor.png" foregroundColor="#FFFFFF" backgroundColor="#000000" transparent="1" />
+
+	<widget source="Event" render="Label" position="20,445" size="60,26" font="Regular;20" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText" />
+	</widget>
+	<widget source="Event" render="Label" position="83,445" size="80,26" font="Regular;20" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Format:- %H:%M</convert>
+	</widget>
+	<widget source="Event" render="Label" position="165,445" size="515,26" font="Regular;20" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
+		<convert type="EventName">Name</convert>
+	</widget>
+	<widget source="Event" render="Label" position="30,465" zPosition="1" size="660,75" font="Regular;18" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1">
+		<convert type="EventName">ExtendedDescription</convert>
+	</widget>
+
+	<ePixmap pixmap="skin_default/buttons/red.png" position="70,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/green.png" position="220,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/yellow.png" position="370,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/blue.png" position="520,537" size="18,18" alphatest="blend" />
+	<widget name="key_red" position="95,539" size="125,26" font="Regular;18" foregroundColor="#9F1313" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_green" position="245,539" size="125,26" font="Regular;18" foregroundColor="#00389416" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_yellow" position="395,539" size="125,26" font="Regular;18" foregroundColor="#B59E01" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_blue" position="545,539" size="125,26" font="Regular;18" foregroundColor="#1E28B6" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+</screen>

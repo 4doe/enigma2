@@ -1,0 +1,202 @@
+#
+#   *******************************
+#   *  Cool TV Guide by Coolman   *
+#   *  3D EPG-Plugin for Enigma2  *
+#   *  Coded by Coolman (c) 2011  *
+#   *******************************
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cool TV Guide V2.2.2\n"
+"POT-Creation-Date: 2010-12-25 18:50+0100\n"
+"PO-Revision-Date: 2011-07-05 04:19+0100\n"
+"Last-Translator: Coolman <Coolman@uni.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Czech\n"
+"X-Poedit-Country: Czech Republic\n"
+
+msgid "Cool 3D"
+msgstr "Cool 3D"
+
+msgid "Load Picon (Yes) (need restart)"
+msgstr "Načítat Picony (Ano) (je potřeba restart)"
+
+msgid "Load CoolPico (Yes) (need restart)"
+msgstr "Načítat CollPico (Ano) (je potřeba restart)"
+
+msgid "Start View 60 , 30 (60)"
+msgstr "Zobrazit po startu 60 , 30 (60)"
+
+msgid "Picon Height (60), (54), (54)"
+msgstr "Picony - výška (60), (54), (54)"
+
+msgid "Picon Item Height (60), (54), (54)"
+msgstr "Picony - výška položky (60), (54), (54)"
+
+msgid "CoolPico Height (30), (27), (27)"
+msgstr "CoolPico - výška (30), (27), (27)"
+
+msgid "CoolPico Item Height (30), (27), (27)"
+msgstr "CoolPico - výška položky (30), (27), (27)"
+
+msgid "Left Width for 60 Height (110), (75), (75)"
+msgstr "Šířka vlevo pro výšku 60 (110), (75), (75)"
+
+msgid "Left Width for 30 Height (190), (110), (110)"
+msgstr "Šířka vlevo pro výšku 30 (190), (110), (110)"
+
+msgid "Channel 1 at Start (No)"
+msgstr "Kanál 1 při startu (Ne)"
+
+msgid "Picon Path (Press Menu)"
+msgstr "Cesta pro Picony (stiskni Menu)"
+
+msgid "About (Press Menu)"
+msgstr "O aplikaci (stiskni Menu)"
+
+msgid "Red Button (Zap)"
+msgstr "Červené tlačítko (Přepnutí)"
+
+msgid "LongRed Button (ZAP+Exit)"
+msgstr "Červené tlačítko - dlouze (Přepnutí+Konec)"
+
+msgid "Green Button (Timer)"
+msgstr "Zelené tlačítko (Časovač)"
+
+msgid "LongGreen Button (Autotimer)"
+msgstr "Zelené tlačítko - dlouze (Autočasovač)"
+
+msgid "Yellow Button (GuideSwitch)"
+msgstr "Žluté tlačítko (CoolPřepínač)"
+
+msgid "LongYellow Button (Bouquetlist)"
+msgstr "Žluté tlačítko - dlouze (Seznam kanálů)"
+
+msgid "Blue Button (Search)"
+msgstr "Modré tlačítko (Hledání)"
+
+msgid "LongBlue Button (IMDb Search)"
+msgstr "Modré tlačítko - dlouze (Hledání v IMDb)"
+
+msgid "OK Button (Channel Info)"
+msgstr "Tlačítko OK (Informace o kanálu)"
+
+msgid "LongOK Button"
+msgstr "Tlačítko OK - dlouze"
+
+msgid "Info Button (Cool Single Guide)"
+msgstr "Info/EPG tlačítko (Cool Single průvodce)"
+
+msgid "LongInfo Button (Cool TV<>Multi Guide)"
+msgstr "Info/EPG tlačítko - dlouze (Cool TV<>Multi průvodce)"
+
+msgid "Cool PrimeTime (20) hour"
+msgstr "Cool - Hlavní TV čas (20) hodin"
+
+msgid "Cool PrimeTime (00) minute"
+msgstr "Cool - Hlavní TV čas (00) minut"
+
+msgid "Event 60 Fontsize (18), (15), (15)"
+msgstr "Událost 60 - velikost textu (18), (15), (15)"
+
+msgid "Event 30 Fontsize (18), (15), (15)"
+msgstr "Událost 30 - velikost textu (18), (15), (15)"
+
+msgid "Left Fontsize (22), (18), (16) (need restart)"
+msgstr "Vlevo - velikost textu (22), (18), (16) (je potřeba restart)"
+
+msgid "Timeline Fontsize (20), (18), (16) (need restart)"
+msgstr "Časová osa - velikost textu (20), (18), (16) (je potřeba restart)"
+
+msgid "Right 60 Font Center (Yes)"
+msgstr "Vpravo 60 - text bude uprostřed (Ano)"
+
+msgid "Time Scale (180)"
+msgstr "Časové měřítko (180)"
+
+msgid "Bouquet at Start (No)"
+msgstr "Seznam kanálů při startu (Ne)"
+
+msgid "Skip Empty Services (No) (need restart)"
+msgstr "Přeskakovat prázdné kanály (Ne) (je potřeba restart)"
+
+msgid "Standard for (HD), (XD), (SD) Skin"
+msgstr "Standard pro (HD), (XD), (SD) skin"
+
+msgid "Press ( < OK > ) to change your Buttons !!!"
+msgstr "Stiskni  ( < OK > ) pro změnu přiřazení tlačítek !!!"
+
+msgid " No function with your Image"
+msgstr "Není funkční ve vaší verzi image"
+
+msgid "   check Autotimer ?"
+msgstr "   ověřit Autočasovač ?"
+
+msgid "Cancel"
+msgstr "Zrušit"
+
+msgid "Save"
+msgstr "Uložit"
+
+msgid "Search"
+msgstr "Hledat"
+
+msgid "Yes"
+msgstr "Ano"
+
+msgid "No"
+msgstr "Ne"
+
+msgid "IMDb Search"
+msgstr "Hledání v IMDb"
+
+msgid "Channel Info"
+msgstr "Informace o pořadu"
+
+msgid "Add Timer"
+msgstr "Přidat časovač"
+
+msgid "delete this Timer ?"
+msgstr "smazat tento časovač ?"
+
+msgid "edit this Timer ?"
+msgstr "změnit tento časovač ?"
+
+msgid "Bouquetlist"
+msgstr "Seznam kanálů"
+
+msgid "Cool Picon Path"
+msgstr "Cool Picon Cesta"
+
+msgid "Your Picon Path:"
+msgstr "Tvoje cesta pro picony:"
+
+msgid "Today"
+msgstr "Dnes"
+
+msgid "Mon"
+msgstr "Po"
+
+msgid "Tue"
+msgstr "Út"
+
+msgid "Wed"
+msgstr "St"
+
+msgid "Thu"
+msgstr "Čt"
+
+msgid "Fri"
+msgstr "Pá"
+
+msgid "Sat"
+msgstr "So"
+
+msgid "Sun"
+msgstr "Ne"
+

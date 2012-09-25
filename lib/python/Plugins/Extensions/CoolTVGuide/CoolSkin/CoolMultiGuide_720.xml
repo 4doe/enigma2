@@ -1,0 +1,44 @@
+<screen name="CoolMultiGuide" position="center,center" size="720,576" backgroundColor="#000000" title="Cool Multi Guide" flags="wfNoBorder">
+	<eLabel text="C  o  o  l    M  u  l  t  i    G  u  i  d  e" position="210,18" size="380,28" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="center" transparent="1" />
+	<widget name="date" position="30,18" size="180,24" font="Regular;18" halign="left" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+	<ePixmap pixmap="skin_default/icons/clock.png" position="178,20" zPosition="1" size="14,14" alphatest="on" />
+	<widget source="global.CurrentTime" render="Label" position="196,18" size="80,20" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<convert type="ClockToText">WithSeconds</convert>
+	</widget>
+	<widget source="global.CurrentTime" render="Label" position="580,18" size="100,24" font="Regular;18" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<convert type="ClockToText">Format:%d.%m.%Y</convert>
+	</widget>
+	<widget source="Event" render="Label" position="250,48" size="70,26" font="Regular;18" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="right" transparent="1">
+		<convert type="EventTime">StartTime</convert>
+		<convert type="ClockToText" />
+	</widget>
+	<widget source="Event" render="Label" position="325,48" size="80,26" font="Regular;18" foregroundColor="#00e5b243" backgroundColor="#000000" shadowColor="#000000" halign="left" transparent="1">
+		<convert type="EventTime">EndTime</convert>
+		<convert type="ClockToText">Format:- %H:%M</convert>
+	</widget>
+	<widget source="Event" render="Label" position="390,48" size="300,21" font="Regular;18" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" halign="left">
+		<convert type="EventName">Name</convert>
+	</widget>
+	<widget source="Event" render="Label" position="278,73" zPosition="1" size="412,162" font="Regular;16" foregroundColor="#00dddddd" backgroundColor="#000000" shadowColor="#000000" transparent="1" valign="top">
+		<convert type="EventName">ExtendedDescription</convert>
+	</widget>
+	<widget source="session.VideoPicture" render="Pig" position="30,48" size="230,184" zPosition="3" backgroundColor="#ff000000" />
+	<widget name="timeline_text" position="0,242" size="690,25" foregroundColor="#00e5b243" backgroundColor="#000000" transparent="1" />
+	<widget name="list" position="30,267" size="665,270" scrollbarMode="showNever" transparent="1" />
+	<widget name="timeline0" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline1" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline2" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline3" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline4" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline5" position="0,235" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
+	<widget name="timeline_now" position="20,267" zPosition="2" size="19,270" pixmap="/usr/lib/enigma2/python/Plugins/Extensions/CoolTVGuide/Cool3D/timeline-now.png" alphatest="on" />
+
+	<ePixmap pixmap="skin_default/buttons/red.png" position="70,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/green.png" position="220,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/yellow.png" position="370,537" size="18,18" alphatest="blend" />
+	<ePixmap pixmap="skin_default/buttons/blue.png" position="520,537" size="18,18" alphatest="blend" />
+	<widget name="key_red" position="95,539" size="125,26" font="Regular;18" foregroundColor="#9F1313" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_green" position="245,539" size="125,26" font="Regular;18" foregroundColor="#00389416" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_yellow" position="395,539" size="125,26" font="Regular;18" foregroundColor="#B59E01" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+	<widget name="key_blue" position="545,539" size="125,26" font="Regular;18" foregroundColor="#1E28B6" backgroundColor="#000000" shadowColor="#000000" halign="left" valign="top" transparent="1" />
+</screen>

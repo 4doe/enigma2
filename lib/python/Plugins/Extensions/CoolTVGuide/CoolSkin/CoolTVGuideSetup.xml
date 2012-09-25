@@ -1,0 +1,13 @@
+<screen name="CoolTVGuideSetup" position="center,center" size="620,470" backgroundColor="#000000" title="Cool TV Guide Setup">
+	<ePixmap pixmap="skin_default/buttons/red.png" position="5,5" size="140,40" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/green.png" position="160,5" size="140,40" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/yellow.png" position="315,5" size="140,40" alphatest="on" />
+	<ePixmap pixmap="skin_default/buttons/blue.png" position="470,5" size="140,40" alphatest="on" />
+	<widget name="key_red" position="5,5" zPosition="1" size="140,40" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+	<widget name="key_green" position="160,5" zPosition="1" size="140,40" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+	<widget name="key_yellow" position="315,5" zPosition="1" size="140,40" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+	<widget name="key_blue" position="470,5" zPosition="1" size="140,40" font="Regular;20" foregroundColor="#FFFFFF" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" transparent="1" />
+	<widget name="CoolText1" position="0,425" size="620,26" font="Regular;20" foregroundColor="#C81717" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" />
+	<widget name="CoolText2" position="0,445" size="620,26" font="Regular;20" foregroundColor="#C81717" backgroundColor="#000000" shadowColor="#000000" shadowOffset="-2,-2" halign="center" transparent="1" />
+	<widget name="config" position="5,55" size="610,350" enableWrapAround="1" />
+</screen>

@@ -1,0 +1,136 @@
+#
+#   *******************************
+#   *  Cool TV Guide by Coolman   *
+#   *  3D EPG-Plugin for Enigma2  *
+#   *  Coded by Coolman (c) 2010  *
+#   *******************************
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Cool TV Guide V2.1.3\n"
+"POT-Creation-Date: 2010-10-16 18:50+0100\n"
+"PO-Revision-Date: 2011-07-05 04:18+0100\n"
+"Last-Translator: Coolman <Coolman@uni.de>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Language: Bulgarian\n"
+"X-Poedit-Country: BULGARIA\n"
+
+msgid "Cool 3D"
+msgstr "Cool 3D"
+
+msgid "Load Picon (Yes) (need restart)"
+msgstr "Зареди Picon (Да) (рестарт)"
+
+msgid "Load CoolPico (Yes) (need restart)"
+msgstr "Зареди CoolPico (Да) (рестарт)"
+
+msgid "Start View 60 , 30 (60)"
+msgstr "Начален изглед 60 , 30 (60)"
+
+msgid "Picon Height (60), (54), (54)"
+msgstr "Picon височина (60), (54), (54)"
+
+msgid "Picon Item Height (60), (54), (54)"
+msgstr "Picon елемент височина (60), (54), (54)"
+
+msgid "CoolPico Height (30), (27), (27)"
+msgstr "CoolPico височина (30), (27), (27)"
+
+msgid "CoolPico Item Height (30), (27), (27)"
+msgstr "CoolPico елем. височина (30), (27), (27)"
+
+msgid "Left Width for 60 Height (110), (75), (75)"
+msgstr "Дължина отляво за височина 60 (110), (75), (75)"
+
+msgid "Left Width for 30 Height (190), (110), (110)"
+msgstr "Дължина отляво за височина 30 (190), (110), (110)"
+
+msgid "Channel 1 at Start (No)"
+msgstr "Канал 1 при старт (Не)"
+
+msgid "Red Button (Zap)"
+msgstr "Червен бутон (Zap)"
+
+msgid "LongRed Button (ZAP+Exit)"
+msgstr "Дълъг червен бутон (ZAP+Изход)"
+
+msgid "Green Button (Timer)"
+msgstr "Зелен бутон (Таймер)"
+
+msgid "LongGreen Button (Autotimer)"
+msgstr "Дълъг зелен бутон (Авт. таймер)"
+
+msgid "Yellow Button (GuideSwitch)"
+msgstr "Жълг бутон (GuideSwitch)"
+
+msgid "LongYellow Button (Bouquetlist)"
+msgstr "Дълъг жълт бутон (лист букети)"
+
+msgid "Blue Button (Search)"
+msgstr "Син бутон (Търсене)"
+
+msgid "LongBlue Button (IMDb Search)"
+msgstr "Дълъг син бутон (IMDВ търсене)"
+
+msgid "OK Button (Channel Info)"
+msgstr "OK бутон (Инфо за канала)"
+
+msgid "LongOK Button"
+msgstr "Дълъг ОК бутон"
+
+msgid "Info Button (Cool Single Guide)"
+msgstr "Info/EPG бутон (Cool Single Guide)"
+
+msgid "LongInfo Button (Cool TV<>Multi Guide)"
+msgstr "Дълъг Info/EPG бутон (Cool TV<>Multi Guide)"
+
+msgid "Cool Primetime (20) hour"
+msgstr "Cool праймтайм (20) часа"
+
+msgid "Cool Primetime (00) minute"
+msgstr "Cool праймтайм (00) мин."
+
+msgid "Event 60 Fontsize (18), (15), (15)"
+msgstr "Събитие 60 шрифт размер(18), (15), (15)"
+
+msgid "Event 30 Fontsize (18), (15), (15)"
+msgstr "Събитие 30 шрифт размре (18), (15), (15)"
+
+msgid "Left Fontsize (22), (18), (16) (need restart)"
+msgstr "От ляво шрифт размер (22), (18), (16) (рестарт)"
+
+msgid "Timeline Fontsize (20), (18), (16) (need restart)"
+msgstr "Timeline шрифт размер (20), (18), (16) (рестарт)"
+
+msgid "Right 60 Font Center (Yes)"
+msgstr "От дасно60 шрифт център (Да)"
+
+msgid "Time Scale (180)"
+msgstr "Времеви инт. (180)"
+
+msgid "chance folder picon ==> coolpicon (needs fullrestart)"
+msgstr "промяна папка picon ==> coolpicon (пълен рестарт)"
+
+msgid "chance folder picon/coolpico ==> coolpicon/coolpico"
+msgstr "промяна папка picon/coolpico ==> coolpicon/coolpico"
+
+msgid "Bouquet at Start (No)"
+msgstr "Букет при старт (Не)"
+
+msgid "Skip Empty Services (false) (need restart)"
+msgstr "Пропусни празни сървизи (false) (рестарт)"
+
+msgid "Standard for (HD), (XD), (SD) Skin"
+msgstr "Стандартно за (HD), (XD), (SD) Skin"
+
+msgid "press ( left OK right ) to change your Buttons !!!"
+msgstr "натисни ( ляво OK дасно ) за да промените бутоните !!!"
+
+msgid " No function with your Image"
+msgstr "Невъзможна работа с Вашият софтуер"
+
