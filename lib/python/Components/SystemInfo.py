@@ -36,7 +36,7 @@ SystemInfo["FrontpanelDisplayGrayscale"] = fileExists("/dev/dbox/oled0")
 def isSupportDeepStandby():
 	if HardwareInfo().has_micom():
 		FP_IOCTL_SUPPORT_DEEP_STANDBY = 0x429
-		fp = open('/dev/fp0', 'w')
+		fp = open('/dev/dbox/fp0', 'w')
 		import fcntl
 		return fcntl.ioctl(fp.fileno(), FP_IOCTL_SUPPORT_DEEP_STANDBY)
 SystemInfo["DeepstandbySupport"] = isSupportDeepStandby()
