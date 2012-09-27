@@ -51,8 +51,7 @@ class PluginBrowser(Screen):
 		self.firsttime = True
 
 		self["red"] = Label(_("Remove Plugins"))
-		self["green"] = Label(_("Download Plugins1"))
-		self["yellow"] = Label(_("Download Plugins2"))
+		self["green"] = Label(_("Download"))
 		
 		self.list = []
 		self["list"] = PluginList(self.list)
@@ -65,8 +64,7 @@ class PluginBrowser(Screen):
 		self["PluginDownloadActions"] = ActionMap(["ColorActions"],
 		{
 			"red": self.delete,
-			"green": self.download1,
-			"yellow": self.download2	# add DownLoad Menu : [iq
+			"gren": self.download
 		})
 
 		self.onFirstExecBegin.append(self.checkWarnings)
@@ -124,18 +122,10 @@ class PluginBrowser(Screen):
 	# download1 : PLi Server
 	# download2 : iQ Server
 
-	def download1(self):
-		self.doPliServer()
+	def download(self):
 		self.session.openWithCallback(self.PluginDownloadBrowserClosed, PluginDownloadBrowser, PluginDownloadBrowser.DOWNLOAD, self.firsttime)
-#		self.session.openWithCallback(self.PluginDownloadBrowserClosed, OldPluginDownloadBrowser, OldPluginDownloadBrowser.DOWNLOAD, self.firsttime)		# [iq]
 		self.firsttime = False
 
-	def download2(self):
-		self.doiQServer()
-		self.session.openWithCallback(self.PluginDownloadBrowserClosed, PluginDownloadBrowser, PluginDownloadBrowser.DOWNLOAD, self.firsttime)
-		self.firsttime = False 
-
-# iq ]
 
 	def PluginDownloadBrowserClosed(self):
 		self.updateList()
