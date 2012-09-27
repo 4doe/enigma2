@@ -51,7 +51,7 @@ class PluginBrowser(Screen):
 		self.firsttime = True
 
 		self["red"] = Label(_("Remove Plugins"))
-		self["green"] = Label(_("Download"))
+		self["green"] = Label(_("Download Plugins"))
 		
 		self.list = []
 		self["list"] = PluginList(self.list)
