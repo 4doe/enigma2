@@ -64,7 +64,7 @@ class PluginBrowser(Screen):
 		self["PluginDownloadActions"] = ActionMap(["ColorActions"],
 		{
 			"red": self.delete,
-			"gren": self.download
+			"green": self.download
 		})
 
 		self.onFirstExecBegin.append(self.checkWarnings)
