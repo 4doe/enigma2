@@ -934,7 +934,9 @@ class HarddiskManager:
 		dev, part = self.splitDeviceName(dev)
 		description = "External Storage %s" % dev
 		try:
-			description = readFile("/sys" + phys + "/model")
+# NOTE : mount information  
+#			description = readFile("/sys" + phys + "/model")
+			description = readFile("/sys" + "/block/"+ dev +"/device" + "/model")
 		except IOError, s:
 			print "couldn't read model: ", s
 		from Tools.HardwareInfo import HardwareInfo
