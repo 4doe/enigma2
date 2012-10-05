@@ -35,6 +35,7 @@ def InitUsageConfig():
 	config.usage.infobar_timeout = ConfigSelection(default = "5", choices = [("0", _("no timeout"))] + choicelist)
 	config.usage.show_infobar_on_zap = ConfigYesNo(default = True)
 	config.usage.show_infobar_on_skip = ConfigYesNo(default = True)
+	config.usage.sort_pluginlist = ConfigYesNo(default = True) # sort plugins list
 	config.usage.show_infobar_on_event_change = ConfigYesNo(default = False)
 # [iq
 	#config.usage.show_second_infobar = ConfigSelection(default = None, choices = [(None, _("None")), ("0", _("no timeout"))] + choicelist) 

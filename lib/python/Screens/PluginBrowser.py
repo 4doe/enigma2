@@ -9,6 +9,7 @@ from Components.Label import Label
 from Components.Harddisk import harddiskmanager
 from Components.Sources.StaticText import StaticText
 from Components import Ipkg
+from Components.config import config # [iq]
 from Screens.MessageBox import MessageBox
 from Screens.ChoiceBox import ChoiceBox
 from Components.Console import Console as SwapConsole		# [iq]
@@ -55,6 +56,10 @@ class PluginBrowser(Screen):
 		
 		self.list = []
 		self["list"] = PluginList(self.list)
+		if config.usage.sort_pluginlist.value:
+			self["list"].list.sort() # sort
+
+# NOTE : plugins sort
 		
 		self["actions"] = ActionMap(["WizardActions"],
 		{
@@ -453,7 +458,13 @@ class PluginDownloadBrowser(Screen):
 
 			self.plugins[split[0]].append((PluginDescriptor(name = x[3], description = x[2], icon = verticallineIcon), split[1], x[1]))
 
-		for x in self.plugins.keys():
+# NOTE : plugin list sort
+		temp = self.plugins.keys() 
+		if config.usage.sort_pluginlist.value:
+			temp.sort()
+
+#		for x in self.plugins.keys():
+		for x in temp:
 			if x in self.expanded:
 				list.append(PluginCategoryComponent(x, expandedIcon, self.listWidth))
 				list.extend([PluginDownloadComponent(plugin[0], plugin[1], plugin[2], self.listWidth) for plugin in self.plugins[x]])
