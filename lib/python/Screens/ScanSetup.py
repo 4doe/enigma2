@@ -287,7 +287,9 @@ class DefaultSatLists(DefaultWizard):
 		self.directory = []
 		self.directory.append(resolveFilename(SCOPE_DEFAULTDIR))
 		import os
-		os.system("mount %s %s" % (resolveFilename(SCOPE_DEFAULTPARTITION), resolveFilename(SCOPE_DEFAULTPARTITIONMOUNTDIR)))
+# iq - spinner [
+#		os.system("mount %s %s" % (resolveFilename(SCOPE_DEFAULTPARTITION), resolveFilename(SCOPE_DEFAULTPARTITIONMOUNTDIR)))
+# ]
 		self.directory.append(resolveFilename(SCOPE_DEFAULTPARTITIONMOUNTDIR))
 				
 	def statusCallback(self, status, progress):

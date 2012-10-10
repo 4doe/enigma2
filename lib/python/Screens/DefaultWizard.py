@@ -28,7 +28,10 @@ class DefaultWizard(WizardLanguage, DreamInfoHandler):
 		self.directory = resolveFilename(SCOPE_DEFAULTPARTITIONMOUNTDIR)
 		self.xmlfile = "defaultwizard.xml"
 		if self.directory:
-			os_system("mount %s %s" % (resolveFilename(SCOPE_DEFAULTPARTITION), self.directory))
+# iq - spinner [
+			pass
+#			os_system("mount %s %s" % (resolveFilename(SCOPE_DEFAULTPARTITION), self.directory))
+# ]
         
 	def markDone(self):
 		config.misc.defaultchosen.value = 0
