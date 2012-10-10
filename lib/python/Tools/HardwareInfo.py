@@ -67,7 +67,7 @@ class HardwareInfo:
 # var SystemInfo["FrontpanelDisplay"], SystemInfo["OledDisplay"] functioning similar with this function looks like not work properly on our device
 #		DEVICES_WITHOUT_MICOM = [ 'single', 'ios300hd' ]
 # ios300 will have micom 
-		DEVICES_WITHOUT_MICOM = [ 'single', 'ios300hd' ]
+		DEVICES_WITHOUT_MICOM = []
 		if HardwareInfo.device_name in DEVICES_WITHOUT_MICOM:
 			return False
 		else:
