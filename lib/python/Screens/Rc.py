@@ -23,12 +23,12 @@ class Rc:
 #		self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-18,0)))
 # [iq
 		from Tools.HardwareInfo import HardwareInfo
-		if HardwareInfo().get_device_name() in ('twin', 'tm2toe' , 'ios200hd' , 'ios300hd' , '2t'):
+		if HardwareInfo().get_device_name() in ('twin', 'tm2toe' , '2t'):
 			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-23,-98)))
 			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-23,0)))
-		if HardwareInfo().get_device_name() in ('ios100hd'):
-			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-18,-160)))
-			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-18,-95)))
+		if HardwareInfo().get_device_name() in ('ios100hd', 'ios200hd' , 'ios300hd'):
+			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-23,-125)))
+			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-22,-45)))
 		else:
 			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-18,-70)))
 			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-18,-0)))
