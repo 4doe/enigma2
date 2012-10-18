@@ -1141,9 +1141,11 @@ class DefaultChannelLists(Screen, ConfigListScreen):
 		self.list = [ ]
 
 		if os.path.exists("/etc/.def_inst/install_motorized"):
-			self.list.append(getConfigListEntry(_("Motorized Dish"), config.lists.motorized, _(self.introduction)))
+			chlist_name = open("/etc/.def_inst/install_motorized", "r").readlines()[0].split("motorized-")[1].split("_")[0]
+			self.list.append(getConfigListEntry(_("Motorized Dish : %s" % chlist_name), config.lists.motorized, _(self.introduction)))
 		if os.path.exists("/etc/.def_inst/install_fixed"):
-			self.list.append(getConfigListEntry(_("Fixed Dish : 13E, 19E, 23E and 28E"), config.lists.fixed, _(self.introduction)))
+			chlist_name = open("/etc/.def_inst/install_fixed", "r").readlines()[0].split("motorized-")[1].split("_")[0]
+			self.list.append(getConfigListEntry(_("Fixed Dish : %s" % chlist_name), config.lists.fixed, _(self.introduction)))
 
 		self["config"].list = self.list
 		self["config"].l.setList(self.list)
