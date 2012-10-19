@@ -67,8 +67,14 @@ def InitUsageConfig():
 	config.usage.default_path = ConfigText(default = resolveFilename(SCOPE_HDD))
 	config.usage.timer_path = ConfigText(default = "<default>")
 	config.usage.instantrec_path = ConfigText(default = "<default>")
-	config.usage.timeshift_path = ConfigText(default = "/media/hdd/")
-	config.usage.allowed_timeshift_paths = ConfigLocations(default = ["/media/hdd/"])
+# if [
+	if HardwareInfo().get_device_name() == "ios300hd":
+		config.usage.timeshift_path = ConfigText(default = "/media/usb/")
+		config.usage.allowed_timeshift_paths = ConfigLocations(default = ["/media/usb/"])
+	else:
+		config.usage.timeshift_path = ConfigText(default = "/media/hdd/")
+		config.usage.allowed_timeshift_paths = ConfigLocations(default = ["/media/hdd/"])
+# ]
 
 	config.usage.movielist_trashcan = ConfigYesNo(default=True)
 	config.usage.movielist_trashcan_days = ConfigNumber(default=8)
