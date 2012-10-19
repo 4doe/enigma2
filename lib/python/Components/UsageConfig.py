@@ -60,6 +60,10 @@ def InitUsageConfig():
 		("standard", _("standard")), ("swap", _("swap PiP and main picture")),
 		("swapstop", _("move PiP to main picture")), ("stop", _("stop PiP")) ])
 
+# iq [
+	if HardwareInfo().get_device_name() == "ios300hd":
+		os.system("rm /hdd; ln -s /media/usb /hdd");
+# ]
 	config.usage.default_path = ConfigText(default = resolveFilename(SCOPE_HDD))
 	config.usage.timer_path = ConfigText(default = "<default>")
 	config.usage.instantrec_path = ConfigText(default = "<default>")
