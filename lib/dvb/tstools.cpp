@@ -49,7 +49,7 @@ void eDVBTSTools::setSource(ePtr<iTsSource> &source, const char *stream_info_fil
 		eDebug("loading streaminfo for %s", stream_info_filename);
 		m_streaminfo.load(stream_info_filename);
 	}
-	/* problem that not unmounted when remove use after stopping timeshift 
+	/* songingeun - problem that not unmounted when remove use after stopping timeshift 
 	, if source is null, close m_streaminfo */
 	else
 	{
