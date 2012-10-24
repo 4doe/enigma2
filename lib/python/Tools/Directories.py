@@ -39,6 +39,14 @@ SCOPE_CURRENT_PLUGIN = 17
 PATH_CREATE = 0
 PATH_DONTCREATE = 1
 PATH_FALLBACK = 2
+
+# songingeun - [
+HDD_PATH="/hdd/movie/"
+from Tools.HardwareInfo import HardwareInfo
+if HardwareInfo().get_device_name() == 'ios300hd':
+	HDD_PATH="/media/usb/movie/"
+# ]
+
 defaultPaths = {
 		SCOPE_TRANSPONDERDATA: (eEnv.resolve("${sysconfdir}/"), PATH_DONTCREATE),
 		SCOPE_SYSETC: (eEnv.resolve("${sysconfdir}/"), PATH_DONTCREATE),
@@ -50,7 +58,8 @@ defaultPaths = {
 
 		SCOPE_SKIN: (eEnv.resolve("${datadir}/enigma2/"), PATH_DONTCREATE),
 		SCOPE_SKIN_IMAGE: (eEnv.resolve("${datadir}/enigma2/"), PATH_DONTCREATE),
-		SCOPE_HDD: ("/hdd/movie/", PATH_DONTCREATE),
+#		SCOPE_HDD: ("/hdd/movie/", PATH_DONTCREATE),
+		SCOPE_HDD: (HDD_PATH, PATH_DONTCREATE),
 		SCOPE_MEDIA: ("/media/", PATH_DONTCREATE),
 		SCOPE_PLAYLIST: (eEnv.resolve("${sysconfdir}/enigma2/playlist/"), PATH_CREATE),
 		
