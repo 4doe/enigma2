@@ -42,8 +42,10 @@ public:
 	int getFirstFrame(off_t &offset, pts_t& pts);
 	int getLastFrame(off_t &offset, pts_t& pts);
 	
-private:
+	/* songingeun */
 	void close();
+private:
+//	void close();
 	int loadCache(int index);
 	int moveCache(int index);
 	/* inter/extrapolate timestamp from offset */
