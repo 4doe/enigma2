@@ -100,7 +100,7 @@ def InitLcd():
 def setFpmRotate(configElement):
 	LCD_IOCTL_ROTATE_START = 4
 	lcd = open('/dev/dbox/lcd0', 'w')
-	on = 1 if configElement.value else 0
+	on = 2 if configElement.value else 0
 	fcntl.ioctl(lcd, LCD_IOCTL_ROTATE_START, on)
 # iq]
 

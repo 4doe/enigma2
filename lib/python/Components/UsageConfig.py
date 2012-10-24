@@ -398,7 +398,7 @@ def InitUsageConfig():
 	config.swupdate.folderprefix = ConfigText(default='', fixed_size=False)
 	config.swupdate.downloadlocation = ConfigSelection(choices = [])
 
-	config.vfd_scroll = ConfigYesNo(default = False)
+	config.vfd_scroll = ConfigYesNo(default = True)
 
 	config.usage.background_hddjob = ConfigYesNo(default = False)		# [iq]
 	config.usage.try_cooltvguide = ConfigYesNo(default = True)		# [iq]
