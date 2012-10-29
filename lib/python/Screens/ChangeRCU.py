@@ -30,6 +30,7 @@ class ChangeRCU(Screen, ConfigListScreen):
 		self.rculist.append("RCU for TM-2T [ver1.0]")		# 1
 		self.rculist.append("RCU for TM-TWIN-OE[ver1.0]")	# 2
 		self.rculist.append("RCU for IOS-100HD[ver1.0]")	# 3
+		self.rculist.append("RCU for TM-SINGLE[ver1.0]")	# 4
 
 		self.rcuMenuList = []
 		for rcu in self.rculist:
@@ -70,7 +71,7 @@ def SetPrivateRCU():
 			pass
 		fd.close()
 
-		if rcuType in (1, 2, 3):
+		if rcuType in (1, 2, 3, 4):
 			device = os.open("/dev/RCProtocol", os.O_RDWR)
 			fcntl.ioctl(device, 7, rcuType)
 			os.close(device)
