@@ -51,6 +51,38 @@ class PluginBrowser(Screen):
 
 		self.firsttime = True
 
+# [iq
+		self.mtdSwap = 0
+
+		self.pathForSwap = None
+		if not self.mtdSwap:
+
+#			hddList = harddiskmanager.HDDList()
+#			for h in hddList:
+#				if "/media/hdd" in h[1].findMount():
+#					self.hddForSwap = h[1].findMount()
+#					break
+#
+#				devpath = "/sys/block/" + h[1].device[:3]
+#				removable = bool(int(readFile(devpath + "/removable")))
+#				if not removable:
+#					if not self.hddForSwap:
+#					self.hddForSwap = h[1].findMount()
+
+			from Components.Harddisk import isFileSystemSupported
+			for partition in harddiskmanager.getMountedPartitions():
+				if "/media/hdd" in partition.mountpoint:
+					self.pathForSwap = partition.mountpoint
+					break
+
+				if isFileSystemSupported(partition.filesystem()):
+					if not self.pathForSwap:
+						self.pathForSwap = partition.mountpoint
+
+		self.Console = SwapConsole()
+		self.swapOn()
+# iq]
+
 		self["red"] = Label(_("Remove Plugins"))
 		self["green"] = Label(_("Download Plugins"))
 		
@@ -77,6 +109,35 @@ class PluginBrowser(Screen):
 		self.onChangedEntry = []
 		self["list"].onSelectionChanged.append(self.selectionChanged)
 		self.onLayoutFinish.append(self.saveListsize)
+# [iq
+#		self.onLayoutFinish.append(self.swapOn)
+		self.onClose.append(self.mtdSwapOff)
+	
+	def swapOn(self):
+		if self.mtdSwap:
+			mtd = 3
+			self.Console.ePopen("mkswap /dev/mtdblock%d; swapon /dev/mtdblock%d" % (mtd, mtd), self.swapFinished) 
+		else:
+			if self.pathForSwap:
+				command = "if [ ! -e %s/.swapfile ]; then dd if=/dev/zero of=%s/.swapfile bs=1024 count=102400; fi" % (self.pathForSwap, self.pathForSwap)
+#				command = "dd if=/dev/zero of=%s/.swapfile bs=1024 count=102400; fi" % self.pathForSwap
+				command += "; mkswap %s/.swapfile" % self.pathForSwap
+				command += "; swapon %s/.swapfile" % self.pathForSwap
+				self.Console.ePopen(command, self.swapFinished) 
+
+	def mtdSwapOff(self):
+		if self.mtdSwap:
+			mtd = 3
+			self.Console.ePopen("swapoff /dev/mtdblock%d; flash_eraseall -jq /dev/mtd%d" % (mtd, mtd), self.swapFinished) 
+		else:
+			if self.pathForSwap:
+				command = "swapoff %s/.swapfile" % self.pathForSwap
+#				command += "; rm -f %s/.swapfile" % self.pathForSwap
+				self.Console.ePopen(command) 
+
+	def swapFinished(self, result, retval, extra_args):
+		pass
+# iq]
 
 	def saveListsize(self):
 		listsize = self["list"].instance.size()
@@ -174,10 +235,6 @@ class PluginDownloadBrowser(Screen):
 	def __init__(self, session, type = 0, needupdate = True):
 		Screen.__init__(self, session)
 		
-# [iq
-		self.Console = SwapConsole()
-		self.mtdSwapOn()
-# iq]
 		self.type = type
 		self.needupdate = needupdate
 		
@@ -218,22 +275,6 @@ class PluginDownloadBrowser(Screen):
 			self.ipkg = 'ipkg'
 			self.ipkg_install = 'ipkg install -force-defaults'
 			self.ipkg_remove =  self.ipkg + ' remove' 
-# [iq
-#		self.onLayoutFinish.append(self.mtdSwapOn)
-		self.onClose.append(self.mtdSwapOff)
-	
-	def mtdSwapOn(self):
-		mtd = 3
-		self.Console.ePopen("mkswap /dev/mtdblock%d; swapon /dev/mtdblock%d" % (mtd, mtd), self.swapFinished) 
-
-	def mtdSwapOff(self):
-		mtd = 3
-#		self.Console.ePopen("swapoff /dev/mtdblock%d; flash_erase -jq /dev/mtd%d 0 0" % (mtd, mtd), self.swapFinished) 
-		self.Console.ePopen("swapoff /dev/mtdblock%d; flash_eraseall -jq /dev/mtd%d" % (mtd, mtd), self.swapFinished) 
-
-	def swapFinished(self, result, retval, extra_args):
-		pass
-# iq]
 
 	def go(self):
 		sel = self["list"].l.getCurrentSelection()
@@ -495,11 +536,6 @@ class OldPluginDownloadBrowser(Screen):
 	def __init__(self, session, type = 0, needupdate = True):
 		Screen.__init__(self, session)
 
-# [iq
-		self.Console = SwapConsole()
-		self.mtdSwapOn()
-# iq]
-		
 		self.type = type
 		self.needupdate = needupdate
 		
@@ -541,32 +577,6 @@ class OldPluginDownloadBrowser(Screen):
 			self.ipkg = 'ipkg'
 			self.ipkg_install = 'ipkg install -force-defaults'
 			self.ipkg_remove =  self.ipkg + ' remove' 
-
-# [iq
-		self["percent"] = Label(_(" "))
-
-		self["free_progress"] = ProgressBar()
-		self["free_progress"].setRange((0,100))
-		self["free_progress"].hide()
-
-		self["free_size"] = Label(_(" "))
-		self.freeSize=0
-
-#		self.onLayoutFinish.append(self.mtdSwapOn)
-		self.onClose.append(self.mtdSwapOff)
-
-	def mtdSwapOn(self):
-		mtd = 3
-		self.Console.ePopen("mkswap /dev/mtdblock%d; swapon /dev/mtdblock%d" % (mtd, mtd), self.swapFinished) 
-
-	def mtdSwapOff(self):
-		mtd = 3
-#		self.Console.ePopen("swapoff /dev/mtdblock%d; flash_erase -jq /dev/mtd%d 0 0" % (mtd, mtd), self.swapFinished) 
-		self.Console.ePopen("swapoff /dev/mtdblock%d; flash_eraseall -jq /dev/mtd%d" % (mtd, mtd), self.swapFinished) 
-
-	def swapFinished(self, result, retval, extra_args):
-		pass
-# iq]
 
 	def go(self):
 		sel = self["list"].l.getCurrentSelection()
