@@ -111,7 +111,7 @@ class PluginBrowser(Screen):
 		self.onLayoutFinish.append(self.saveListsize)
 # [iq
 #		self.onLayoutFinish.append(self.swapOn)
-		self.onClose.append(self.mtdSwapOff)
+		self.onClose.append(self.swapOff)
 	
 	def swapOn(self):
 		if self.mtdSwap:
@@ -125,7 +125,7 @@ class PluginBrowser(Screen):
 				command += "; swapon %s/.swapfile" % self.pathForSwap
 				self.Console.ePopen(command, self.swapFinished) 
 
-	def mtdSwapOff(self):
+	def swapOff(self):
 		if self.mtdSwap:
 			mtd = 3
 			self.Console.ePopen("swapoff /dev/mtdblock%d; flash_eraseall -jq /dev/mtd%d" % (mtd, mtd), self.swapFinished) 
