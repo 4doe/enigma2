@@ -75,7 +75,7 @@ class PluginBrowser(Screen):
 					self.pathForSwap = partition.mountpoint
 					break
 
-				if isFileSystemSupported(partition.filesystem()):
+				if partition.device and isFileSystemSupported(partition.filesystem()):
 					if not self.pathForSwap:
 						self.pathForSwap = partition.mountpoint
 
