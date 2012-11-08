@@ -26,7 +26,7 @@ class Rc:
 		if HardwareInfo().get_device_name() in ('twin', 'tm2toe' , '2t', 'tmtwinoe'):
 			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-23,-98)))
 			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-23,0)))
-		if HardwareInfo().get_device_name() in ('ios100hd', 'ios200hd' , 'ios300hd'):
+		if HardwareInfo().get_device_name() in ('ios100hd', 'ios200hd' , 'ios300hd' , 'tmsingle'):
 			self.selectpics.append((self.rcheighthalf, ["arrowdown", "arrowdown2"], (-23,-125)))
 			self.selectpics.append((self.rcheight, ["arrowup", "arrowup2"], (-22,-45)))
 		else:

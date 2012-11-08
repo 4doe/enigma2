@@ -49,7 +49,7 @@ class InfoBar(InfoBarBase, InfoBarShowHide,
 # [iq
 				"openBouquetList": self.openBouquetList,
 				"showMediaPlayer": (self.showMediaPlayer, _("Show the media player...")),
-				"openTimerList": (self.openTimerList, _("Show the tv player...")),
+				"openTimerList": self.openTimerList,
 				"ZoomInOut":(self.ZoomInOut, _("Zoom In/Out TV...")), 
 				"ZoomOff":(self.ZoomOff, _("Zoom Off...")),
 				"HarddiskSetup": (self.HarddiskSetup, _("Select HDD")),
