@@ -15,6 +15,11 @@ from enigma import eTimer, eEnv
 from xml.sax import make_parser
 from xml.sax.handler import ContentHandler
 
+# iq - [
+from Tools.HardwareInfo import HardwareInfo
+import os, fcntl
+# ]
+
 class WizardSummary(Screen):
 	def __init__(self, session, parent):
 		Screen.__init__(self, session, parent)
@@ -227,6 +232,9 @@ class Wizard(Screen):
 			"8": self.keyNumberGlobal,
 			"9": self.keyNumberGlobal,
 			"0": self.keyNumberGlobal
+# iq - [
+			,"menu": self.countMenuKey
+# ]
 		}, -1)
 
 		self["VirtualKB"] = NumberActionMap(["VirtualKeyboardActions"],
@@ -235,7 +243,61 @@ class Wizard(Screen):
 		}, -2)
 		
 		self["VirtualKB"].setEnabled(False)
-		
+
+# iq - [	
+		# support only tm models
+		self.devices = { "tm2toe":1, "tmtwinoe":2, "tmsingle":4 }
+		self.models = { 1:"TM-2T", 2:"TM-Twin", 4:"TM-Single" }
+		self.rcu = self.devices.get(HardwareInfo().get_device_name())
+		self.rcuSaveFile = "/etc/.rcu"
+		if os.path.exists(self.rcuSaveFile):
+			fd = open(self.rcuSaveFile, "r")
+			try:
+				if int(fd.readline().strip()) in self.devices.values():
+					self.rcu = int(fd.readline().strip()) 
+			except:
+				pass
+
+		self.menuKeyCount = 0
+
+		self.resetMenuKeyCountTimer = eTimer()
+		self.resetMenuKeyCountTimer.callback.append(self.resetMenuKeyCount)
+
+	def resetMenuKeyCount(self):
+		# if not pressed menu key in 1000ms, reset count
+		self.menuKeyCount = 0
+
+	def countMenuKey(self):	
+		if self.rcu and HardwareInfo().get_device_name() in self.devices.keys():
+			self.resetMenuKeyCountTimer.stop()
+			self.menuKeyCount += 1
+			if self.menuKeyCount == 5:
+				self.menuKeyCount = 0
+
+				# skip non tm rcu
+				self.rcu += 1
+				if self.rcu == 3:
+					self.rcu += 1
+				elif self.rcu > 4:
+					self.rcu = 1
+
+				rcDevice = os.open("/dev/RCProtocol", os.O_RDWR)
+				fcntl.ioctl(rcDevice, 7, self.rcu)
+				os.close(rcDevice)
+
+				fd = open(self.rcuSaveFile, "w+");
+				fd.write("%d" % self.rcu)
+				fd.close()
+
+				self.session.openWithCallback(self.showVfdMessage, MessageBox, (_("Warning :\n Remote Controller has been set to %s" % self.models.get(self.rcu))), MessageBox.TYPE_WARNING, timeout=7)
+			else:
+				# if not pressed menu key in 1000ms, reset count
+				self.resetMenuKeyCountTimer.start(1000)
+
+	def showVfdMessage(self, ret):
+		os.system("echo \"RCU: %s\" > /proc/stb/lcd/show_txt" % self.models.get(self.rcu))
+# ]
+
 	def red(self):
 		print "red"
 		pass
