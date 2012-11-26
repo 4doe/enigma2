@@ -92,7 +92,7 @@ class ChangeRCUWithoutRCU():
 		if self.rcu and HardwareInfo().get_device_name() in self.devices.keys():
 			self.resetMenuKeyCountTimer.stop()
 			self.menuKeyCount += 1
-			if self.menuKeyCount == 5:
+			if self.menuKeyCount == 3:
 				self.switchRCU()
 			else:
 				# if not pressed menu key in 1000ms, reset count
