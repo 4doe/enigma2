@@ -562,18 +562,24 @@ class InfoBarChannelSelection:
 class InfoBarMenu:
 	""" Handles a menu action, to open the (main) menu """
 	def __init__(self):
+# iq - [
+		from Screens.ChangeRCU import ChangeRCUWithoutRCU
+		self.rcuChanger = ChangeRCUWithoutRCU()
+# ]
+
 		self["MenuActions"] = HelpableActionMap(self, "InfobarMenuActions",
 			{
+# iq - [
 				"mainMenu": (self.mainMenu, _("Enter main menu...")),
-# [iq
 				"showNetworkSetup": (self.showNetworkSetup, _("Show Network Setup...")),
 				"showMediaPlayer": (self.showMediaPlayer, _("Show Media Playser...")),
 				"showRFmod": (self.showRFmod, _("Show RFmod Setup...")),
 				"toggleAspectRatio": (self.toggleAspectRatio, _("Toggle Aspect Ratio...")),
-# iq]
+# ]
 			})
 		self.session.infobar = None
-# [iq
+
+# iq - [	
 	def toggleAspectRatio(self):
 		ASPECT = [ "auto", "16_9", "4_3" ]
 		ASPECT_MSG = { "auto":"Auto", "16_9":"16:9", "4_3":"4:3" }
@@ -596,7 +602,7 @@ class InfoBarMenu:
 
 	def showNetworkSetup(self):
 		self.session.open(NetworkAdapterSelection)
-# iq]
+# ]
 
 	def mainMenu(self):
 		print "loading mainmenu XML..."
@@ -608,6 +614,10 @@ class InfoBarMenu:
 		# at the moment used from the SubserviceSelection
 
 		self.session.openWithCallback(self.mainMenuClosed, MainMenu, menu)
+
+# iq - [
+		self.rcuChanger.countMenuKey()
+# ]
 
 	def mainMenuClosed(self, *val):
 		self.session.infobar = None
