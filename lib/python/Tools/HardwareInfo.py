@@ -87,6 +87,16 @@ class HardwareInfo:
 		else:
 			return True
 
+# temp test mode tmsinglemini
+# tmsinglemini model has not scart ic.
+
+	def has_scart(self):
+		DEVICES_WITHOUT_SCART = [ 'tmsinglemini' ]
+		if HardwareInfo.device_name in DEVICES_WITHOUT_SCART:
+			return False
+		else:
+			return True
+
 	def support_1080p(self):
 		DEVICES_WITHOUT_1080P = []
 		if HardwareInfo.device_name in DEVICES_WITHOUT_1080P:
