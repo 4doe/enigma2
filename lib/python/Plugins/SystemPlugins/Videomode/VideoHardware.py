@@ -60,7 +60,10 @@ class VideoHardware:
 		"640x480" : { 60: "640x480" }
 	}
 
-	modes["Scart"] = ["PAL", "NTSC", "Multi"]
+# iq [
+	if HardwareInfo().has_scart():
+		modes["Scart"] = ["PAL", "NTSC", "Multi"]
+# iq
 # iq [
 	if HardwareInfo().support_1080p():
 		if HardwareInfo().has_yuv():
